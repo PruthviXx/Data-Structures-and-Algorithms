@@ -1,4 +1,4 @@
-package Basic_Maths;
+package maths;
 
 public class GCD {
 

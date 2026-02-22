@@ -1,0 +1,156 @@
+package linked_list.singly_ll;
+import java.util.*;
+
+class Node{
+    int data;
+    Node next;
+    
+    Node(int data, Node next){
+        this.data=data;
+        this.next=next;
+    }
+}
+
+class LinkedList{
+    
+    public static Node createLL(List<Integer> list){
+        if(list.isEmpty()){
+            return null;
+        }
+        
+        int size = list.size();
+        
+        Node head = null;
+        Node pointer = head;
+        for(int i=0; i< size; i++){
+            Node newNode = new Node(list.get(i), null);
+            
+            if(head==null){
+                head = newNode;
+                pointer = head;
+                continue;
+            }
+            
+            pointer.next = newNode;
+            pointer = pointer.next;
+        }
+        
+        return head;
+    }
+    
+    public static void printLL(Node head){
+        Node temp = head;
+        
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+    
+    public static int getLength(Node head){
+        Node temp = head;
+        int len = 0;
+        
+        while(temp!=null){
+            len++;
+            temp=temp.next;
+        }
+        
+        return len;
+    }
+    
+    
+}
+
+class SwapKNode{
+    public static Node solve(Node head, int k){
+        // Edge cases
+        
+        // if total 2 Nodes
+        if(head==null || head.next==null){
+            return head;
+        }
+        
+        // if total 2 Nodes
+        if(head.next.next==null && k>0){
+            Node point1 = head, point2 = head.next;
+            point1.next=null;
+            point2.next=point1;
+            return point2;
+        }
+        
+        // get mid and calculate half length
+        Node hair = head;
+        Node tortoise = head, tortoisePrev = head;
+        int halfLength = 1;
+        
+        while(hair!=null && hair.next!=null){
+            tortoisePrev = tortoise;
+            tortoise = tortoise.next;
+            hair = hair.next.next;
+            halfLength++;
+        }
+        
+        
+        int len = halfLength - k;
+        
+        // if the kth node from start and end is same
+        if(len==0){
+            return head;
+        }
+        
+        Node point1 = head;
+        Node point2 = tortoise;
+        Node point2Prev = tortoisePrev;
+        Node point2Next = point2.next;
+        Node point1Next = point1.next;
+        Node point1Prev = head;
+        
+        // find kth from start
+        int indx=1;
+        while(indx<k){
+            point1Prev = point1;
+            point1 = point1.next;
+            point1Next = point1.next;
+            indx++;
+        }
+        
+        // find kth from end
+        indx=1;
+        while(indx<len){
+            point2Prev = point2;
+            point2 = point2.next;
+            point2Next = point2.next;
+            indx++;
+        }
+        
+        // if k is 1
+        if(k==1){
+            point2.next=point1.next;
+            point1.next=null;
+            point2Prev.next=point1;
+            return point2;
+        }
+        
+        
+        // for all either cases when k > 0
+        point1Prev.next = point2;
+        point2.next = point1.next;
+        point1.next = point2Next;
+        point2Prev.next = point1;
+        
+        return head;
+    }
+}
+
+
+
+public class kth_Node {
+    public static void main(String[] args) {
+        Node head = LinkedList.createLL(Arrays.asList(1, 2, 3, 4, 5));
+        LinkedList.printLL(head);
+        head = SwapKNode.solve(head,7);
+        LinkedList.printLL(head);
+    }
+}

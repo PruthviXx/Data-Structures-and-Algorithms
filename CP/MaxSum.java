@@ -56,7 +56,7 @@ public class MaxSum {
             if (bit1 == 1 && bit2 == 0) {
                 int tempMax = arr[i] + arr[j];
                 if (tempMax > max) {
-                    max = tempMax
+                    max = tempMax;
                 }
                 System.out.println(arr[i] + " " + arr[j]);
                 i++;

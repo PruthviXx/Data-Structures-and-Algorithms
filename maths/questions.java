@@ -1,9 +1,9 @@
-package Basic_Maths;
+package maths;
 
 public class questions {
 
-    static int countDigits(int n){
-        int cnt=(int)(Math.log10(n)+1);
+    static int countDigits(int n) {
+        int cnt = (int) (Math.log10(n) + 1);
         return cnt;
     }
 

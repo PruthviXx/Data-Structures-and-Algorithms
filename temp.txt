@@ -1,0 +1,19 @@
+/Users/pruthvirajhaladkar/Library/Containers/com.apple.wallpaper.extension.aerials/Data
+/System/Library/ExtensionKit/Extensions/WallpaperAerialsExtension.appex/Contents/MacOS/WallpaperAerialsExtension
+/Library/Preferences/Logging/.plist-cache.UGe47zSo
+/System/Library/ExtensionKit/Extensions/WallpaperAerialsExtension.appex/Contents/Resources/InfoPlist.loctable
+/System/Library/PrivateFrameworks/Wallpaper.framework/Versions/A/Resources/Localizable.loctable
+/usr/lib/dyld
+/private/var/folders/v_/wvx44qbj6bz087sz00wb1r_00000gn/0/com.apple.LaunchServices.dv/com.apple.LaunchServices-16777237-v2(5749f992~).csstore
+/usr/share/icu/icudt76l.dat
+/System/Library/Frameworks/CFNetwork.framework/Versions/A/Resources/Localizable.loctable
+/private/var/db/analyticsd/events.allowlist
+/System/Library/Video/Plug-Ins/VCPHEVC.bundle/Contents/Resources/InfoPlist.loctable
+/System/Library/Extensions/AGXMetal13_3.bundle/Contents/MacOS/AGXMetal13_3
+/System/Library/Frameworks/CFNetwork.framework/Versions/A/Resources/DafsaData.bin
+/System/Library/CoreServices/SystemVersion.bundle/en_GB.lproj/SystemVersion.strings
+/System/Library/Extensions/AGXMetal13_3.bundle/Contents/Resources/ds.g13g
+/dev/null
+/dev/null
+/dev/null
+[ctl com.apple.netsrc id 7 unit 72]
