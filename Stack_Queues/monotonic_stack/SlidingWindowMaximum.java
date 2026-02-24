@@ -33,7 +33,7 @@ class SlidingWindowMaximumSolution{
                 dq.pollFirst();
             }
             // maintain decreasing order monostack
-            while(!dq.isEmpty() && dq.peekFirst() < arr[i]){
+            while(!dq.isEmpty() && arr[dq.peekLast()] < arr[i]){
                 dq.pollFirst();
             }
             // push index in queue
