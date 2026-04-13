@@ -1,3 +1,5 @@
+package Stack_Queues.monotonic_stack;
+
 import java.util.*;
 
 // Total Time: O(1), Total Space: O(2n) -> one for map and one for list 

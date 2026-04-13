@@ -1,3 +1,5 @@
+package oop;
+
 class Animal {
     void eat() {
         System.out.println("Lion is eating");

@@ -1,3 +1,5 @@
+package Stack_Queues.monotonic_stack;
+
 import java.util.*;
 
 class StockSpanner{

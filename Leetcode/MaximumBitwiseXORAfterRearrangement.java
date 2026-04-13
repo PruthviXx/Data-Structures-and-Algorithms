@@ -1,10 +1,10 @@
 package Leetcode;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 class Solution {
-    public String bruteForce(String s, String t) { // O (n^2)
+    // Space : O(2n) , Time : O(n^2) + O(n)
+    public String bruteForce(String s, String t) {
         StringBuilder originalT = new StringBuilder(t);
         StringBuilder rearrangedT = new StringBuilder();
         int n = s.length();
@@ -63,6 +63,7 @@ class Solution {
         return originalT.toString();
     }
 
+    // Space : O(2n) + O(2) , Time : O(3n)
     public String better(String s, String t) {
         StringBuilder rearrangedT = new StringBuilder();
         StringBuilder ans = new StringBuilder();
@@ -70,11 +71,7 @@ class Solution {
 
         for (int i = 0; i < t.length(); i++) {
             char ch = t.charAt(i);
-            // if (map.containsKey(ch)) {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
-            // } else {
-            // map.put(ch, 1);
-            // }
         }
 
         for (int i = 0; i < s.length(); i++) {
@@ -82,19 +79,35 @@ class Solution {
             if (ch == '1') {
                 // find 0 in t
                 if (map.containsKey('0')) {
-                    map.put('0', map.get('0') - 1);
+                    if (map.get('0') == 1) {
+                        map.remove('0');
+                    } else {
+                        map.put('0', map.get('0') - 1);
+                    }
                     rearrangedT.append("0");
                 } else {
-                    map.put('1', map.get('1') - 1);
+                    if (map.get('1') == 1) {
+                        map.remove('1');
+                    } else {
+                        map.put('1', map.get('1') - 1);
+                    }
                     rearrangedT.append("1");
                 }
             } else {
                 // find 1 in t
                 if (map.containsKey('1')) {
-                    map.put('1', map.get('1') - 1);
+                    if (map.get('1') == 1) {
+                        map.remove('1');
+                    } else {
+                        map.put('1', map.get('1') - 1);
+                    }
                     rearrangedT.append("1");
                 } else {
-                    map.put('0', map.get('0') - 1);
+                    if (map.get('0') == 1) {
+                        map.remove('0');
+                    } else {
+                        map.put('0', map.get('0') - 1);
+                    }
                     rearrangedT.append("0");
                 }
             }
@@ -113,10 +126,96 @@ class Solution {
         return ans.toString();
     }
 
+    // Space : O(2n) + O(2) , Time : O(3n)
+    public String optimal(String s, String t) {
+        int count1 = 0;
+        int count0 = 0;
+        StringBuilder rearrangedT = new StringBuilder();
+        StringBuilder ans = new StringBuilder();
+
+        for (int i = 0; i < t.length(); i++) {
+            if (t.charAt(i) == '0') {
+                count0++;
+            } else {
+                count1++;
+            }
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '0') {
+                // check whether 1 is present or append 0
+                if (count1 > 0) {
+                    rearrangedT.append('1');
+                    count1--;
+                } else {
+                    rearrangedT.append('0');
+                    count0--;
+                }
+            } else {
+                // check whether 0 is present or append 1
+                if (count0 > 0) {
+                    rearrangedT.append('0');
+                    count0--;
+                } else {
+                    rearrangedT.append('1');
+                    count1--;
+                }
+            }
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '1' && rearrangedT.charAt(i) == '0'
+                    || s.charAt(i) == '0' && rearrangedT.charAt(i) == '1') {
+                ans.append("1");
+            } else {
+
+                ans.append("0");
+            }
+        }
+
+        return ans.toString();
+    }
+
+    public String mostOptimal(String s, String t) {
+        int count1 = 0;
+        int count0 = 0;
+        StringBuilder ans = new StringBuilder();
+
+        for (int i = 0; i < t.length(); i++) {
+            if (t.charAt(i) == '0') {
+                count0++;
+            } else {
+                count1++;
+            }
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '0') {
+                // check whether 1 is present or append 0
+                if (count1 > 0) {
+                    ans.append('1');
+                    count1--;
+                } else {
+                    ans.append('0');
+                    count0--;
+                }
+            } else {
+                // check whether 0 is present or append 1
+                if (count0 > 0) {
+                    ans.append('1');
+                    count0--;
+                } else {
+                    ans.append('0');
+                    count1--;
+                }
+            }
+        }
+
+        return ans.toString();
+    }
+
     public String maximumXor(String s, String t) {
-        System.out.println("BruteForce : " + bruteForce(s, t));
-        System.out.println("Better :     " + better(s, t));
-        return better(s, t);
+        return mostOptimal(s, t);
     }
 }
 
@@ -131,10 +230,10 @@ public class MaximumBitwiseXORAfterRearrangement {
         for (int i = 0; i < list.size(); i++) {
             String s = list.get(i).get(0);
             String t = list.get(i).get(1);
-            // System.out.println(ans);
+            String ans = solution.maximumXor(s, t);
+            System.out.println(ans);
         }
         String s = "0110";
         String t = "1110";
-        String ans = solution.maximumXor(s, t);
     }
 }
