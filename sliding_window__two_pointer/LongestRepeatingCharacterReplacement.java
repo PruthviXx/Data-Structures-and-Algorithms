@@ -37,7 +37,6 @@ class Solution{
 
     // TC -> (n^k), SC -> (k) 
     public int better(String str,int k){
-        System.out.println(bruteForce(str,k));
         int n = str.length();
         int maxLen = 0;
         int right = 0, left = 0, maxFreq = 0;
@@ -83,7 +82,6 @@ class Solution{
 
     // TC -> (n), SC -> (k) 
     public int optimal(String str,int k){
-        System.out.println(better(str,k));
         int n = str.length();
         int maxLen = 0;
         int right = 0, left = 0, maxFreq = 0;
