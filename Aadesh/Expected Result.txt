@@ -1,0 +1,166 @@
+VM argument should be executed successfully and JAR file should start running on server.
+File should be picked successfully
+File should be moved to expected path
+File should be moved to expected path
+Status should be changed as expected
+Status should be changed as expected
+Status should be changed as expected
+If checksum is invalid, CHECKSUMINVALID field from ACHFILEDR will be = Y, and flag will be updated to 0 with REASON_CODE 04
+If checksum is invalid, CHECKSUMINVALID field from ACHFILEDR will be = Y, and BENEFICIARY_ACNO_FILE, ADHD_ACCT_NO will be updated = "99999999995".
+If checkdigit is found invalid when AppStatusFlag is Y, REASON_CODE is updated as 71 in ACHFILEDR, ADHD_ERROR_NO AS 0208 - INVALID ACCOUNT NUMBER, ADHD_STATUS as 26
+AppStatusFlag should be N in application.properties
+VM argument should be executed successfully and JAR file should start running on server.
+adhd_txn_branch should be TXN_BRANCH in application.properties
+Entry should be present in table as expected
+Record should be present in table as expected
+Record should be present in table as expected
+Status should be changed as expected
+Status should be changed as expected
+Status should be changed as expected
+File name should be in expected format
+AppStatusFlag should be Y in application.properties
+VM argument should be executed successfully and JAR file should start running on server.
+adhd_txn_branch should be TXN_BRANCH in application.properties
+Entry should be present in table as expected
+Record should be present in table as expected
+Record should be present in table as expected
+Status should be changed as expected
+Status should be changed as expected
+Status should be changed as expected
+VM argument should be executed successfully and JAR file should start running on server.
+Present day records with status 25 will be picked
+Status will be changed to 37 in ADHD.
+Status will be changed to 28 in ADHD.
+VM argument should be executed successfully and JAR file should start running on server.
+Present day records with status 37 will be picked
+ADHD_STATUS is updated to 27.
+ADHD_STATUS is updated to 36 and error 3331 will be displayed.
+ADHD_STATUS is updated to 36 and error 3332 will be displayed.
+ADHD_STATUS is updated to 36 and error 3328 will be displayed.
+ADHD_STATUS is updated to 36 and error 3327 will be displayed.
+ADHD_STATUS is updated to 36 and error 3329 will be displayed.
+ADHD_STATUS is updated to 27.
+VM argument should be executed successfully and JAR file should start running on server.
+Present day records with status 27 will be picked
+ADHD_AMOUNT should be as mentioned in records.
+ADHD_TRAN_CODE should be 1050.
+ADHD_JRNL_NO must be updated for record with status 27.
+ADHD_ERROR_DESC must be updated for record with status 27 as MR_Success.
+VM argument should be executed successfully and JAR file should start running on server.
+Present day records with status 17 will be picked
+Settlement date should be present date.
+Count should match.
+Summation should match total amount
+Status should be changed as expected
+REF_NO's should be generated successfully
+Status should be changed as expected
+VM argument should be executed successfully and JAR file should start running on server.
+Present day records with status 19 will be picked
+txn date should be present date.
+Status should be changed as expected
+Fields should be updated
+Status should be changed as expected
+VM argument should be executed successfully and JAR file should start running on server.
+Present day records with status 21 will be picked
+Status should be changed as expected
+Status should be changed as expected
+timestamp should be changed as expected
+Return file should be created with file name format - ACH-DR-SBIN-SBIN4353318-(PRESENTDATE)-(SERIAL NO.)-RTN.txt
+VM argument should be executed successfully and JAR file should start running on server.
+File should be picked successfully
+File should be moved to expected path
+File should be moved to expected path
+Status should be changed as expected
+Status should be changed as expected
+Screen should load successfully with file Name field, Browse, Upload, and Close buttons visible.
+File should upload successfully and success confirmation message should be displayed
+Selected file name should be displayed in File Name field.
+Only new selected should be uploaded successfully.
+System should display validation message "Please select a file to upload." and upload should not be processed
+System should display error message like "Invalid file format" and reject the upload.
+System should display error message and file should not be uploaded
+System should display error message "file size exceeds allowed limit.".
+File explorer should open
+Upload screen should close and user should be redirected to previous dashboard.
+Upload button should be disabled before file selection and enabled after file selection
+File name field should display * indicating mandatory field
+Error messages should be clear and properly visible.
+Screen should load successfully with Date field, Status dropdown, Transmit and close button visible.
+System should display all ACH debit file records for the selected date
+Selected date should populate date field and correct result should be displayed.
+System should display validation message "Date is required" and should not proceed.
+System should display error message "Invalid date format".
+System should either show no records or error message.
+System should display "No records found"
+System should display ACH debit file status records.
+ACH Debit File Status screen should close and user should return to previous screen
+Date field should display * indicating mandatory field.
+Placeholder should be displayed as dd-mm-yyyy
+ACH Debit Return File tab should be available in Aadesh application dashboard.
+On click "ACH Debit Return File" tab should get highlighted.
+On click system should render "901903:ACH DEBIT RETURN FILE DOWNLOAD" screen
+System should display alert message "INVALID/EMPTY DATE" and hint message of "Date is required"
+Allowed date format should be "dd/mm/yyyy"
+System should allow manual date typing.
+System should allow 2 digits in "dd" part as per allowed days for respective month during manual date typing.
+System should allow values 01 to 12 in "mm" part during manual date typing.
+System should accept 4 digit values only in "yyyy" part during manual date typing.
+System should not accept date before "31/12/1900" in date selection/ typing.
+System should not allow future date selection/typing.
+On clicking date picker system should open current month calendar.
+On click system should select current day date.
+On click system should clear selected date.
+On clicking system should change calendar to previous month
+On clicking system should change calendar to next month
+Transmit button should be available in "901903:ACH DEBIT RETURN FILE DOWNLOAD"
+Transmit button should be functional for valid request date.
+Close button should be visible in "ACH DEBIT RETURN FILE DOWNLOAD"
+On click "Close" button user should be redirected to Aadesh dashboard.
+Ach Debit Transaction Enquiry tab should be available in Aadesh application dashboard.
+On click "Ach Debit Transaction Enquiry" tab should get highlighted.
+On click system should render "36691: ACH DEBIT TRANSACTION ENQUIRY" screen
+"Account Number" field should be available.
+"Account Number" field should be marked as a mandatory field.
+System should not allow Enquiry for blank "Account Number".
+System should not accept non numeric "Account Number" field.
+System should not allow special characters in "Account Number" field.
+System should accept numeric digits only in "Account Number" field.
+System should not allow enquiry with "Account Number" less than 11 digits.
+System should accept 11 digits only "Account Number" field.
+Start Date should be marked as mandatory
+System should display alert message of "Start Date is required"
+System should display alert message of "Start Date is required"
+Allowed Start Date format should be "dd/mm/yyyy"
+System should allow manual Start Date typing.
+System should allow 2 digits in "dd" part as per allowed days for respective month during manual Start Date typing.
+System should allow values 01 to 12 in "mm" part during manual Start Date typing.
+System should accept 4 digit values only in "yyyy" part during manual Start Date typing.
+System should not accept Start Date before "31/12/1900" in date selection/ typing.
+System should not allow future start date selection/typing.
+On clicking date picker system should open current month calendar.
+On click system should select current day date.
+On click system should clear selected date in start date.
+On clicking system should change calendar to previous month
+On clicking system should change calendar to next month
+System should not allow start date selection after end date.
+End date should be marked as mandatory field.
+System should display alert message of "End Date is required"
+System should display alert message of "End Date is required"
+Allowed date format should be "dd/mm/yyyy"
+System should allow manual end date typing.
+System should allow 2 digits in "dd" part as per allowed days for respective month during manual end date typing.
+System should allow values 01 to 12 in "mm" part during manual end date typing.
+System should accept 4 digit values only in "yyyy" part during manual end date typing.
+System should not accept end date before "31/12/1900" in date selection/ typing.
+System should not allow future end date selection/typing.
+On clicking date picker system should open current month calendar.
+On click system should select current day date.
+On click system should clear selected date in end date field.
+On clicking system should change calendar to previous month
+On clicking system should change calendar to next month
+System should not allow end date before start date.
+System should allow end date and start date.
+Transmit button should be available in "901903:ACH DEBIT RETURN FILE DOWNLOAD"
+Transmit button should be functional for valid request date.
+Close button should be visible in "ACH DEBIT RETURN FILE DOWNLOAD"
+On click "Close" button user should be redirected to Aadesh dashboard.
