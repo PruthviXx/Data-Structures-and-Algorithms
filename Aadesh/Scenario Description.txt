@@ -1,164 +1,164 @@
-Decrypted Files Output
-Failed Decryption Files Output
-Decrypted Files Status Log
-Failed Decryption Status Log
-Failed Files Status Log
-Valid Checksum Verification
-Invalid Checksum Dummy Values Update
-Account Number Check Digit
-AppStatusFlag-N Configuration
-VM Arguments Execution
-Branch Field Mapping
-File Header Entry (Flag-N)
-File Recordwise Entry (Flag-N)
-ADHD Recordwise Entry (Flag-N)
-Successful FileReader Status (Flag-N)
-Failed FileReader Status (Flag-N)
-Unpicked File Status (Flag-N)
-Input File Naming Format
-AppStatusFlag-Y Configuration
-VM Arguments Execution
-Branch Field Mapping
-File Header Entry (Flag-Y)
-File Recordwise Entry (Flag-Y)
-ADHD Recordwise Entry (Flag-Y)
-Successful FileReader Status (Flag-Y)
-Failed FileReader Status (Flag-Y)
-Unpicked File Status (Flag-Y)
-VM Arguments Execution
-Present Day Records Pickup
-Validation Success Status Update
-Validation Failure Status Update
-VM Arguments Execution
-Present Day Records Pickup
-Mandate Validation Pass Status Update
-Mandate Failure on From/Received Date
-Mandate Failure on To Date
-Mandate Failure on UMN Status
-Mandate Failure on Amount
-Mandate Failure on File Count
-Transaction Success and File Count Update
-VM Arguments Execution
-Present Day Batch Records Pickup
-Transaction Amount Verification
-Transaction Code Verification
-Journal Number Update
-Error Description Update
-VM Arguments Execution
-Present Day Records Pickup
-Settlement Date Verification
-Total Items Count Verification
-Total Amount Summation
-Successful Validation Status Update
-Request Reference Number Generation
-Failed Validation Status Update
-VM Arguments Execution
-Present Day Records Pickup
-Transaction Date Verification
-Successful Transaction Status Update
-Journal Number Generation
-Failed Transaction Status Update
-VM Arguments Execution
-Present Day Records Pickup
-Return File Success Status Update
-Return File Failure Status Update
-Last Status Date Time Update
-Return File Name Update
-VM Arguments Execution
-Source Files Pickup for Decryption
-Decrypted Files Server Output
-Failed Decryption Files Output
-Decrypted Files Status Log
-Failed Files Status Log
-ACH Debit File Upload Navigation
-Valid ACH Debit File Upload
-Selected File Name Display
-Change Selected File Before Upload
-Upload Without File Selection
-Invalid File Format Rejection
-Empty File Upload Behavior
-File Size Validation
-Browse Button Functionality
-Close Button Functionality
-Upload Button Behavior
-File Name Mandatory Indicator
-Error Message Clarity
-ACH Debit File Status Navigation
-Retrieve Records for Valid Date (Status ALL)
-Calendar Control Date Selection
-Mandatory Date Field Validation
-Invalid Date Format Rejection
-Future Date Selection Behavior
-No Data Found Behavior
-Transmit Button Functionality
-Close Button Functionality
-Date Field Mandatory Indicator
-Date Field Placeholder
-ACH Debit Return File Tab Availability
-ACH Debit Return File Tab Highlight
-ACH Debit Return File Tab Navigation
-Mandatory Date Field Validation
-Date Format Verification
-Manual Date Typing
-Manual Date Day (dd) Validation
-Manual Date Month (mm) Validation
-Manual Date Year (yyyy) Validation
-Minimum Date Limit (31/12/1900) Validation
-Future Date Selection Restriction
-Date Picker Functionality
-Date Picker "Today" Option
-Date Picker "Clear" Option
-Date Picker Previous Button
-Date Picker Next Button
-Transmit Button Availability
-Transmit Button Functionality
-Close Button Visibility
-Close Button Functionality
-ACH Debit Transaction Enquiry Tab Availability
-ACH Debit Transaction Enquiry Tab Highlight
-ACH Debit Return File Tab Navigation
-Account Number Field Availability
-Mandatory Account Number Validation
-Blank Account Number Validation
-Non-Numeric Account Number Validation
-Special Character Account Number Validation
-Numeric Account Number Verification
-Account Number Minimum Length Validation
-Account Number Maximum Length Validation
-Mandatory Start Date Validation
-Blank Start Date Validation
-Partial Start Date Validation
-Start Date Format Verification
-Manual Start Date Typing
-Manual Start Date Day (dd) Validation
-Manual Start Date Month (mm) Validation
-Manual Start Date Year (yyyy) Validation
-Minimum Start Date Limit (31/12/1900) Validation
-Future Start Date Restriction
-Start Date Picker Functionality
-Start Date Picker "Today" Option
-Start Date Picker "Clear" Option
-Start Date Picker Previous Button
-Start Date Picker Next Button
-Start Date After End Date Validation
-Mandatory End Date Validation
-Blank End Date Validation
-Partial End Date Validation
-End Date Format Verification
-Manual End Date Typing
-Manual End Date Day (dd) Validation
-Manual End Date Month (mm) Validation
-Manual End Date Year (yyyy) Validation
-Minimum End Date Limit (31/12/1900) Validation
-Future End Date Restriction
-End Date Picker Functionality
-End Date Picker "Today" Option
-End Date Picker "Clear" Option
-End Date Picker Previous Button
-End Date Picker Next Button
-End Date Before Start Date Validation
-Same Start and End Date Verification
-Transmit Button Availability
-Transmit Button Functionality
-Close Button Visibility
-Close Button Functionality
+Verify decrypted files output
+Verify failed decryption files output
+Verify decrypted files status log
+Verify decryption failed status log
+Verify failed files status log
+Verify valid checksum
+Update dummy values on invalid checksum
+Verify account number check digit
+Verify AppStatusFlag-N configuration
+Execute VM arguments
+Verify branch field mapping
+Verify file header entry (Flag-N)
+Verify file recordwise entry (Flag-N)
+Verify ADHD recordwise entry (Flag-N)
+Verify successful FileReader status (Flag-N)
+Verify failed FileReader status (Flag-N)
+Verify unpicked file status (Flag-N)
+Verify input file naming format
+Verify AppStatusFlag-Y configuration
+Execute VM arguments
+Verify branch field mapping
+Verify file header entry (Flag-Y)
+Verify file recordwise entry (Flag-Y)
+Verify ADHD recordwise entry (Flag-Y)
+Verify successful FileReader status (Flag-Y)
+Verify failed FileReader status (Flag-Y)
+Verify unpicked file status (Flag-Y)
+Execute VM arguments
+Pick present day records
+Update status on validation success
+Update status on validation failure
+Execute VM arguments
+Pick present day records
+Update status on mandate validation pass
+Fail mandate validation on from/received date
+Fail mandate validation on to date
+Fail mandate validation on UMN status
+Fail mandate validation on amount
+Fail mandate validation on file count
+Process transaction success and update file count
+Execute VM arguments
+Pick present day batch records
+Verify transaction amount
+Verify transaction code
+Update journal number
+Update error description
+Execute VM arguments
+Pick present day records
+Verify settlement date
+Verify total items count
+Verify total amount summation
+Update file status on successful validation
+Generate request reference number
+Update file status on failed validation
+Execute VM arguments
+Pick present day records
+Verify transaction date
+Update file status on successful transaction
+Generate journal number
+Update file status on failed transaction
+Execute VM arguments
+Pick present day records
+Update status on return file success
+Update status on return file failure
+Update last status date time
+Update return file name
+Execute VM arguments
+Pick source files for decryption
+Verify decrypted files output on server
+Verify failed decryption files output
+Verify decrypted files status log
+Verify failed files status log
+Navigate to ACH Debit File Upload screen
+Upload valid ACH debit file
+Display selected file name
+Change selected file before upload
+Validate upload without selecting file
+Reject invalid file format
+Verify empty file upload behavior
+Validate file size
+Open file explorer via Browse button
+Close upload window via Close button
+Verify Upload button behavior
+Verify mandatory indicator on file name
+Verify clear error messages
+Open ACH Debit File Status screen
+Retrieve records for valid date with status ALL
+Select date using calendar control
+Validate mandatory date field
+Reject invalid date format
+Verify future date selection behavior
+Verify behavior when no data exists
+Verify Transmit button functionality
+Close screen via Close button
+Verify mandatory indicator on date field
+Verify placeholder on date field
+Verify ACH Debit Return File tab availability
+Highlight ACH Debit Return File tab on click
+Click ACH Debit Return File tab
+Verify date field is mandatory
+Verify date format
+Allow manual date typing
+Allow 2 digits in dd for manual date
+Allow 01 to 12 in mm for manual date
+Accept 4 digits in yyyy for manual date
+Reject date before 31/12/1900
+Disallow future date selection or typing
+Verify date picker functionality
+Verify Today option in date picker
+Verify Clear option in date picker
+Verify previous button in date picker
+Verify next button in date picker
+Verify Transmit button availability
+Verify Transmit button functionality
+Verify Close button visibility
+Verify Close button functionality
+Verify ACH Debit Transaction Enquiry tab availability
+Highlight ACH Debit Transaction Enquiry tab on click
+Click ACH Debit Return File tab
+Verify Account Number field availability
+Verify Account Number field is mandatory
+Validate blank Account Number field
+Validate non-numeric Account Number
+Validate special character in Account Number
+Verify numeric digits in Account Number
+Validate minimum length of Account Number
+Validate maximum length of Account Number
+Verify Start Date is mandatory
+Validate blank Start Date
+Validate partial Start Date
+Verify Start Date format
+Allow manual Start Date typing
+Allow 2 digits in dd for manual Start Date
+Allow 01 to 12 in mm for manual Start Date
+Accept 4 digits in yyyy for manual Start Date
+Reject Start Date before 31/12/1900
+Disallow future Start Date selection or typing
+Verify date picker in Start Date
+Verify Today option in Start Date picker
+Verify Clear option in Start Date picker
+Verify previous button in Start Date picker
+Verify next button in Start Date picker
+Validate Start Date after End Date
+Verify End Date is mandatory
+Validate blank End Date
+Validate partial End Date
+Verify End Date format
+Allow manual End Date typing
+Allow 2 digits in dd for manual End Date
+Allow 01 to 12 in mm for manual End Date
+Accept 4 digits in yyyy for manual End Date
+Reject End Date before 31/12/1900
+Disallow future End Date selection or typing
+Verify date picker in End Date
+Verify Today option in End Date picker
+Verify Clear option in End Date picker
+Verify previous button in End Date picker
+Verify next button in End Date picker
+Validate End Date before Start Date
+Verify same Start Date and End Date
+Verify Transmit button availability
+Verify Transmit button functionality
+Verify Close button visibility
+Verify Close button functionality
