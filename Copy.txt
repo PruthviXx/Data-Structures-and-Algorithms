@@ -1,0 +1,120 @@
+Decrypted Files Output Verification
+Failed Decryption Files Output Verification
+Decrypted Files Status Log Verification
+Decryption Failed Status Log Verification
+Failed Files Status Log Verification
+Valid Checksum Verification
+Dummy Values Update on Invalid Checksum
+Account Number Checkdigit Verification
+AppStatusFlag-N Configuration Verification
+VM Arguments Execution
+Branch Field Mapping Verification
+File Header Entry Verification (Flag-N)
+File Recordwise Entry Verification (Flag-N)
+ADHD Recordwise Entry Verification (Flag-N)
+Successful FileReader Status Verification (Flag-N)
+Failed FileReader Status Verification (Flag-N)
+Unpicked File Status Verification (Flag-N)
+Input File Naming Format Verification
+AppStatusFlag-Y Configuration Verification
+VM Arguments Execution
+Branch Field Mapping Verification
+File Header Entry Verification (Flag-Y)
+File Recordwise Entry Verification (Flag-Y)
+ADHD Recordwise Entry Verification (Flag-Y)
+Successful FileReader Status Verification (Flag-Y)
+Failed FileReader Status Verification (Flag-Y)
+Unpicked File Status Verification (Flag-Y)
+VM Arguments Execution
+Present Day Records Pickup Verification
+Status Update on Validation Success
+Status Update on Validation Failure
+VM Arguments Execution
+Present Day Records Pickup Verification
+Status Update on Mandate Validation Pass
+Mandate Validation Failure on From/Rec Date
+Mandate Validation Failure on To Date
+Mandate Validation Failure on UMN Status
+Mandate Validation Failure on Amount
+Mandate Validation Failure on File Count
+Transaction Success & File Count Update
+VM Arguments Execution
+Present Day Batch Records Pickup Verification
+Transaction Amount Verification
+Transaction Code Verification
+Journal Number Update Verification
+Error Description Update Verification
+VM Arguments Execution
+Present Day Records Pickup Verification
+Settlement Date Verification
+Total Items Count Verification
+Total Amount Summation Verification
+File Status Update on Successful Validation
+Request Reference Number Generation
+File Status Update on Failed Validation
+VM Arguments Execution
+Present Day Records Pickup Verification
+Transaction Date Verification
+File Status Update on Successful Transaction
+Journal Number Generation Verification
+File Status Update on Failed Transaction
+VM Arguments Execution
+Present Day Records Pickup Verification
+Status Update on Return File Success
+Status Update on Return File Failure
+Last Status Date Time Update Verification
+Return File Name Update Verification
+VM Arguments Execution
+Source Files Pickup for Decryption
+Decrypted Files Output on Server Verification
+Failed Decryption Files Output Verification
+Decrypted Files Status Log Verification
+Failed Files Status Log Verification
+Navigate to ACH Debit File Upload Screen
+Valid ACH Debit File Upload Verification
+Selected File Name Display Verification
+Change Selected File Before Upload
+Upload Validation Without File Selection
+Invalid File Format Rejection Verification
+Empty File Upload Behaviour Verification
+File Size Validation Verification
+Browse Button Functionality Verification
+Close Button Functionality Verification
+Upload Button Behaviour Verification
+File Name Mandatory Indicator Verification
+Error Message Clarity Verification
+ACH Debit File Status Screen Navigation
+Retrieve Records for Valid Date (Status ALL)
+Calendar Control Date Selection Verification
+Mandatory Date Field Validation
+Invalid Date Format Rejection Verification
+Future Date Selection Behaviour Verification
+No Data Exists System Behaviour Verification
+Transmit Button Verification
+Close Button Functionality Verification
+Date Field Mandatory Indicator Verification
+Date Field Placeholder Verification
+ACH Debit Return File Tab Availability
+ACH Debit Return File Tab Highlight
+ACH Debit Return File Tab Navigation
+Mandatory Date Field Verification
+Date Format Verification
+Manual Date Typing Verification
+Day (dd) Format Validation on Manual Typing
+Month (mm) Format Validation on Manual Typing
+Year (yyyy) Format Validation on Manual Typing
+Minimum Date Limit (31/12/1900) Validation
+Future Date Selection/Typing Restriction
+Date Picker Functionality Verification
+Date Picker "Today" Option Verification
+Date Picker "Clear" Option Verification
+Date Picker Previous Button Verification
+Date Picker Next Button Verification
+Transmit Button Availability Verification
+Transmit Button Functionality Verification
+Close Button Visibility Verification
+Close Button Functionality Verification
+ACH Debit Transaction Enquiry Tab Availability
+ACH Debit Transaction Enquiry Tab Highlight
+ACH Debit Return File Tab Click Verification
+Account Number Field Availability Verification
